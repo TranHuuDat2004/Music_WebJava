@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+        Dashboard
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<div class="flex flex-col md:flex-row">
+    <!-- Sidebar -->
+    <div class="w-full md:w-64 bg-white h-auto md:h-screen shadow-md">
+        <div class="p-4 flex items-center">
+            <img alt="Brick Shop Logo" class="mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/MqM0joCPJiZJNxR2WUzReFAQ6YgfbljjjGAPQjep7spwa5dnA.jpg" width="40"/>
+            <span class="text-xl font-bold">
+                BRICK SHOP
+            </span>
+        </div>
+        <nav class="mt-10">
+            <a class="flex items-center py-2 px-8 bg-gray-200 text-gray-700" href="admin.jsp"><i
+                class="fas fa-tachometer-alt mr-3"></i>Dashboard</a>
+        <a class="flex items-center py-2 px-8 text-gray-700 hover:bg-gray-200" href="add-song.jsp"><i
+                class="fas fa-plus mr-3"></i>Add Music</a>
+        <a class="flex items-center py-2 px-8 text-gray-700 hover:bg-gray-200" href="add-singer.jsp"><i
+                class="fas fa-star mr-3"></i>Add Singer</a>
+        <a class="flex items-center py-2 px-8 text-gray-700 hover:bg-gray-200" href="manage-user.jsp"><i
+                class="fas fa-users mr-3"></i>Manage Users</a>
+        <a class="flex items-center py-2 px-8 text-gray-700 hover:bg-gray-200" href="manage-singer.jsp"><i
+            class="fas fa-shopping-cart mr-3"></i>Manage Singer</a>
+        <a class="flex items-center py-2 px-8 text-gray-700 hover:bg-gray-200" href="manage-song.jsp"><i
+                class="fas fa-box mr-3"></i>Manage Song</a>
+        <a class="flex items-center py-2 px-8 text-gray-700 hover:bg-gray-200" href="manage-comment.jsp"><i
+                class="fas fa-comments mr-3"></i>Manage Comment</a>
+        <a class="flex items-center py-2 px-8 text-gray-700 hover:bg-gray-200" href="manage-contact.jsp"><i
+                class="fas fa-tags mr-3"></i>Manage Contact</a>
+        </nav>
+    </div>
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+        <!-- Top Bar -->
+        <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+            <div class="relative w-full md:w-1/2 mb-4 md:mb-0">
+                <input class="w-full py-2 px-4 rounded-lg border border-gray-300" placeholder="Search for projects" type="text"/>
+                <i class="fas fa-search absolute top-3 right-3 text-gray-400"></i>
+            </div>
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-moon text-gray-600"></i>
+                <i class="fas fa-bell text-gray-600"></i>
+                <i class="fas fa-user-circle text-gray-600"></i>
+            </div>
+        </div>
+        <!-- Dashboard Content -->
+        <h1 class="text-2xl font-semibold mb-4">
+            Dashboard
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                <i class="fas fa-shopping-cart text-3xl text-orange-500 mr-4"></i>
+                <div>
+                    <p class="text-gray-600">
+                        Total Orders
+                    </p>
+                    <p class="text-2xl font-bold">
+                        1283
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                <i class="fas fa-users text-3xl text-green-500 mr-4"></i>
+                <div>
+                    <p class="text-gray-600">
+                        Users
+                    </p>
+                    <p class="text-2xl font-bold">
+                        3
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                <i class="fas fa-chart-line text-3xl text-blue-500 mr-4"></i>
+                <div>
+                    <p class="text-gray-600">
+                        New sales
+                    </p>
+                    <p class="text-2xl font-bold">
+                        376
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                <i class="fas fa-comments text-3xl text-teal-500 mr-4"></i>
+                <div>
+                    <p class="text-gray-600">
+                        Pending comments
+                    </p>
+                    <p class="text-2xl font-bold">
+                        35
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Song Form -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Edit Song</h2>
+            <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block text-gray-700">Title</label>
+                        <input class="w-full py-2 px-4 rounded-lg border border-gray-300" type="text" placeholder="Enter song title" value="Song Title 1"/>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Singer</label>
+                        <select class="w-full py-2 px-4 rounded-lg border border-gray-300">
+                            <option>Select singer</option>
+                            <option selected>Singer 1</option>
+                            <option>Singer 2</option>
+                            <option>Singer 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Description</label>
+                    <textarea class="w-full py-2 px-4 rounded-lg border border-gray-300" rows="4" placeholder="Enter description">Description of song 1</textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Image</label>
+                    <input class="w-full py-2 px-4 rounded-lg border border-gray-300" type="file"/>
+                    <img alt="Song Image 1" class="h-20 w-20 rounded-full mt-4" height="80" src="https://storage.googleapis.com/a1aa/image/0A9BFaxxBh50OxgspRyjGuzjtnhyYq4NNJvHaAVySEpr7Y8E.jpg" width="80"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">File Name</label>
+                    <input class="w-full py-2 px-4 rounded-lg border border-gray-300" type="file"/>
+                    <p class="mt-2">Current file: song1.mp3</p>
+                </div>
+                <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    // Revenue Line Chart
+    const ctxRevenue = document.getElementById('revenueChart').getContext('2d');
+    const revenueChart = new Chart(ctxRevenue, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'Revenue',
+                data: [1200, 1900, 3000, 5000, 2000, 3000, 4500],
+                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                fill: true,
+                tension: 0.1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    beginAtZero: true
+                },
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Best Seller Pie Chart
+    const ctxBestSeller = document.getElementById('bestSellerChart').getContext('2d');
+    const bestSellerChart = new Chart(ctxBestSeller, {
+        type: 'pie',
+        data: {
+            labels: ['Product A', 'Product B', 'Product C', 'Product D'],
+            datasets: [{
+                label: 'Best Seller',
+                data: [300, 50, 100, 150],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+</script>
+</body>
+</html>

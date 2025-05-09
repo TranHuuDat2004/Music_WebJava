@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Modern Music</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .table-row {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.table-row:nth-child(even) {
+    background-color: #ffffff; /* Dòng chẵn */
+}
+
+.table-row:nth-child(odd) {
+    background-color: #f9f9f9; /* Dòng lẻ */
+}
+
+.table-row:hover {
+    background-color: #e0e0e0; /* Hover */
+    color: #000; /* Đổi màu chữ khi hover */
+}
+
+.table-cell {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.rounded-lg {
+    border-radius: 0.75rem;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Button Styles */
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    border: none;
+    outline: none;
+}
+
+/* Primary Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 86, 179, 0.3);
+    transform: scale(1.05);
+}
+
+.btn-primary:active {
+    background-color: #003f7f;
+    transform: scale(0.98);
+}
+
+/* Secondary Button Styles */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(108, 117, 125, 0.2);
+}
+
+.btn-secondary:hover {
+    background-color: #565e64;
+    box-shadow: 0 6px 8px rgba(86, 94, 100, 0.3);
+    transform: scale(1.05);
+}
+
+.btn-secondary:active {
+    background-color: #3e4347;
+    transform: scale(0.98);
+}
+
+
+</style>
+<body>
+        <!-- Search box -->
+        <form action="search.jsp" class="search-bar relative w-full" method="POST" style="max-width: 500px; margin: auto;">
+            <!-- Input Box -->
+            <div class="relative w-full mb-4">
+                <input 
+                    class="w-full py-2 px-4 rounded-lg border border-gray-300" 
+                    name="data" 
+                    placeholder="Search for songs or singers" 
+                    required 
+                    type="text" 
+                    style="padding-right: 40px;"
+                />
+                <!-- Search Icon -->
+                <i class="fas fa-search absolute top-2.5 right-4 text-gray-400" style="position: absolute; right: 12px; top: 12px;"></i>
+            </div>
+            <!-- Buttons -->
+            <div class="flex justify-center gap-4">
+                <button class="btn btn-primary" name="btnSearchSong" type="submit">
+                    Search Songs
+                </button>
+                <button class="btn btn-secondary" name="btnSearchSinger" type="submit">
+                    Search Singers
+                </button>
+            </div>
+        </form>
+</body>
+</html>

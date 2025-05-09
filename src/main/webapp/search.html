@@ -1,0 +1,239 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Search Songs and Singers
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  <div class="container mx-auto p-6">
+   <!-- Search Bar -->
+   <div class="oneMusic-buttons-area mb-100">
+    <!-- Search box -->
+    <form action="search.jsp" class="search-bar relative" method="POST">
+     <div class="relative w-full">
+      <input class="w-full py-2 px-4 rounded-lg border border-gray-300" name="data" placeholder="Search for songs or singers" required="" type="text"/>
+      <i class="fas fa-search absolute top-3 right-3 text-gray-400">
+      </i>
+     </div>
+     <div class="mt-4">
+      <button class="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 mr-2" name="btnSearchSong" type="submit">
+       Search Songs
+      </button>
+      <button class="btn btn-secondary bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600" name="btnSearchSinger" type="submit">
+       Search Singers
+      </button>
+     </div>
+    </form>
+   </div>
+   <!-- Search Results -->
+   <div class="grid grid-cols-1 gap-4" id="searchResults">
+    <!-- Example Song Result Container 1 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+     <div class="grid grid-cols-4 gap-4">
+      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+       <img alt="Song Image 1" class="w-full h-auto rounded-lg mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/BS9eTnO49xWWBq277xQ0ZvBPvKXPCh9IBvup2PCTsQR0f0xTA.jpg" width="100"/>
+       <h2 class="text-xl font-semibold">
+        Song Title 1
+       </h2>
+       <p class="text-gray-600">
+        Singer: Singer 1
+       </p>
+       <p class="text-gray-600">
+        Description: Description of song 1
+       </p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+       <img alt="Song Image 2" class="w-full h-auto rounded-lg mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/xmwb7XAUM6JjK1yvtbFF1JHTOSew8NoJN45kKwSV8Ixxf0xTA.jpg" width="100"/>
+       <h2 class="text-xl font-semibold">
+        Song Title 2
+       </h2>
+       <p class="text-gray-600">
+        Singer: Singer 2
+       </p>
+       <p class="text-gray-600">
+        Description: Description of song 2
+       </p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+       <img alt="Song Image 3" class="w-full h-auto rounded-lg mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/RsXSooxZIsKSCNisrvkxrzpig8pwHJ9KHrp9tJ1EFnq5Pd8E.jpg" width="100"/>
+       <h2 class="text-xl font-semibold">
+        Song Title 3
+       </h2>
+       <p class="text-gray-600">
+        Singer: Singer 3
+       </p>
+       <p class="text-gray-600">
+        Description: Description of song 3
+       </p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+       <img alt="Song Image 4" class="w-full h-auto rounded-lg mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/WmxfDRreyuhcz0Oav4gMdfMtVzFwx5wxB3sfTz9EjftQ8nOeE.jpg" width="100"/>
+       <h2 class="text-xl font-semibold">
+        Song Title 4
+       </h2>
+       <p class="text-gray-600">
+        Singer: Singer 4
+       </p>
+       <p class="text-gray-600">
+        Description: Description of song 4
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- Example Song Result Container 2 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+     <div class="grid grid-cols-4 gap-4">
+      <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+       <img alt="Song Image 5" class="w-full h-auto rounded-lg mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/PfcznRdjMvXbGagM2SC9w39m1wGwJbQJWeQp25n2MmOkfpjnA.jpg" width="100"/>
+       <h2 class="text-xl font-semibold">
+        Song Title 5
+       </h2>
+       <p class="text-gray-600">
+        Singer: Singer 5
+       </p>
+       <p class="text-gray-600">
+        Description: Description of song 5
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- Example Singer Result -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+     <h2 class="text-xl font-semibold">
+      Singer 1
+     </h2>
+     <p class="text-gray-600">
+      Age: 25
+     </p>
+     <p class="text-gray-600">
+      Description: Description of singer 1
+     </p>
+    </div>
+    <!-- Add more results as needed -->
+   </div>
+  </div>
+  <script>
+   const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    const data = [
+        {
+            type: 'song',
+            title: 'Song Title 1',
+            singer: 'Singer 1',
+            description: 'Description of song 1',
+            image: 'https://placehold.co/100x100'
+        },
+        {
+            type: 'song',
+            title: 'Song Title 2',
+            singer: 'Singer 2',
+            description: 'Description of song 2',
+            image: 'https://placehold.co/100x100'
+        },
+        {
+            type: 'song',
+            title: 'Song Title 3',
+            singer: 'Singer 3',
+            description: 'Description of song 3',
+            image: 'https://placehold.co/100x100'
+        },
+        {
+            type: 'song',
+            title: 'Song Title 4',
+            singer: 'Singer 4',
+            description: 'Description of song 4',
+            image: 'https://placehold.co/100x100'
+        },
+        {
+            type: 'song',
+            title: 'Song Title 5',
+            singer: 'Singer 5',
+            description: 'Description of song 5',
+            image: 'https://placehold.co/100x100'
+        },
+        {
+            type: 'singer',
+            name: 'Singer 1',
+            age: 25,
+            description: 'Description of singer 1'
+        },
+        {
+            type: 'singer',
+            name: 'Singer 2',
+            age: 30,
+            description: 'Description of singer 2'
+        }
+        // Add more data as needed
+    ];
+
+    searchInput.addEventListener('input', function() {
+        const searchValue = this.value.toLowerCase();
+        searchResults.innerHTML = '';
+
+        const filteredData = data.filter(item => {
+            if (item.type === 'song') {
+                return item.title.toLowerCase().includes(searchValue) || item.singer.toLowerCase().includes(searchValue) || item.description.toLowerCase().includes(searchValue);
+            } else if (item.type === 'singer') {
+                return item.name.toLowerCase().includes(searchValue) || item.description.toLowerCase().includes(searchValue);
+            }
+        });
+
+        const songContainers = [];
+        let currentContainer = [];
+
+        filteredData.forEach(item => {
+            if (item.type === 'song') {
+                currentContainer.push(item);
+                if (currentContainer.length === 4) {
+                    songContainers.push(currentContainer);
+                    currentContainer = [];
+                }
+            }
+        });
+
+        if (currentContainer.length > 0) {
+            songContainers.push(currentContainer);
+        }
+
+        songContainers.forEach(container => {
+            const songContainer = document.createElement('div');
+            songContainer.classList.add('bg-white', 'p-4', 'rounded-lg', 'shadow-md');
+            const songGrid = document.createElement('div');
+            songGrid.classList.add('grid', 'grid-cols-4', 'gap-4');
+            container.forEach(item => {
+                const songResult = document.createElement('div');
+                songResult.classList.add('bg-gray-100', 'p-4', 'rounded-lg', 'shadow-md');
+                songResult.innerHTML = `
+                    <img src="${item.image}" alt="Song Image" class="w-full h-auto rounded-lg mb-2">
+                    <h2 class="text-xl font-semibold">${item.title}</h2>
+                    <p class="text-gray-600">Singer: ${item.singer}</p>
+                    <p class="text-gray-600">Description: ${item.description}</p>
+                `;
+                songGrid.appendChild(songResult);
+            });
+            songContainer.appendChild(songGrid);
+            searchResults.appendChild(songContainer);
+        });
+
+        filteredData.forEach(item => {
+            if (item.type === 'singer') {
+                const singerResult = document.createElement('div');
+                singerResult.classList.add('bg-white', 'p-4', 'rounded-lg', 'shadow-md');
+                singerResult.innerHTML = `
+                    <h2 class="text-xl font-semibold">${item.name}</h2>
+                    <p class="text-gray-600">Age: ${item.age}</p>
+                    <p class="text-gray-600">Description: ${item.description}</p>
+                `;
+                searchResults.appendChild(singerResult);
+            }
+        });
+    });
+  </script>
+ </body>
+</html>
