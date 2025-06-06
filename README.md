@@ -113,6 +113,54 @@ The project includes various UI views:
   </tr>
 </table>
 
+<h3>🔧 Admin Interface</h3>
+
+<table>
+  <tr>
+    <th width="33%">Dashboard Page</th>
+    <th width="33%">Add Music Page</th>
+    <th width="33%">Add Singer Page</th>
+  </tr>
+  <tr>
+    <td><img src="screenshot/Dashboard-page.jpg" width="100%"></td>
+    <td><img src="screenshot/Add-music-page.jpg" width="100%"></td>
+    <td><img src="screenshot/Add-singer-page.jpg" width="100%"></td>
+  </tr>
+
+  <tr>
+    <th>Manage Singers</th>
+    <th>Manage Songs</th>
+    <th>Manage Users</th>
+  </tr>
+  <tr>
+    <td><img src="screenshot/Manage-Singers.jpg" width="100%"></td>
+    <td><img src="screenshot/Manage-Song.jpg" width="100%"></td>
+    <td><img src="screenshot/Manage-Users.jpg" width="100%"></td>
+  </tr>
+
+  <tr>
+    <th>Manage Contact</th>
+    <th>Bar Chart (Data Visualization)</th>
+    <th>Top 10 Songs (Admin View)</th>
+  </tr>
+  <tr>
+    <td><img src="screenshot/Manage-Contact.jpg" width="100%"></td>
+    <td><img src="screenshot/Bar-chart.jpg" width="100%"></td>
+    <td><img src="screenshot/Top-10-Songs-Admin.jpg" width="100%"></td>
+  </tr>
+
+  <tr>
+    <th>Singer Added Confirmation</th>
+    <th>Song Detail After Add Music</th>
+    <th>User Deleted Confirmation</th>
+  </tr>
+  <tr>
+    <td><img src="screenshot/Singer-added.jpg" width="100%"></td>
+    <td><img src="screenshot/Song-detail-After-add-music.jpg" width="100%"></td>
+    <td><img src="screenshot/Delete-User-successfully.jpg" width="100%"></td>
+  </tr>
+</table>
+
 
 
 ## 💻 Technology Stack
