@@ -54,47 +54,48 @@ The application is divided into user-facing features and an administrative backe
 
 The project includes various UI views:
 
-### 👤 User Interface
+### 🖼️ User Interface
 
-| **Homepage** | **Login Page** | **Registration Page** |
-|--------------|----------------|------------------------|
-| ![Homepage](screenshot/Home page.jpg) | ![Login Page](screenshot/Login.jpg) | ![Register Page](screenshot/register.jpg) |
+| Homepage | Login Page | Registration Page |
+|----------|------------|-------------------|
+| ![Homepage](screenshot/Homepage.jpg) | ![Login Page](screenshot/Login.jpg) | ![Register Page](screenshot/register.jpg) |
 
-| **All Music Displayed** | **Song Details Page** | **Singer Details Page** |
-|-------------------------|------------------------|--------------------------|
-| ![All Music](screenshot/All Music Displayed.jpg) | ![Song Details](screenshot/Song Details.jpg) | ![Singer Details](screenshot/Singer Details Sơn Tùng MTP.jpg) |
+| All Music Displayed | Song Details Page | Singer Details Page |
+|---------------------|-------------------|----------------------|
+| ![All Music](screenshot/All-Music-Displayed.jpg) | ![Song Details](screenshot/Song-Details.jpg) | ![Singer Details](screenshot/Singer-Details-Son-Tung-MTP.jpg) |
 
-| **Popular Artists** | **Top 10 Songs** | **Search Results** |
-|---------------------|------------------|---------------------|
-| ![Popular Artists](screenshot/Popular Artists.jpg) | ![Top 10 Songs](screenshot/Top 10 songs.jpg) | ![Search Singer](screenshot/Search singer Sơn Tùng.jpg) |
+| Popular Artists | Top 10 Songs | Search Results |
+|-----------------|--------------|----------------|
+| ![Popular Artists](screenshot/Popular-Artists.jpg) | ![Top 10 Songs](screenshot/Top-10-songs.jpg) | ![Search Singer](screenshot/Search-singer-Son-Tung.jpg) |
 
-| **Filter by First Letter** | **Event Page** | **News Page** |
-|----------------------------|----------------|----------------|
-| ![Filter](screenshot/Filter by First Letter S.jpg) | ![Event Page](screenshot/Event Page.jpg) | ![News Page](screenshot/News Page.jpg) |
+| Filter by First Letter | Event Page | News Page |
+|------------------------|------------|-----------|
+| ![Filter](screenshot/Filter-by-First-Letter-S.jpg) | ![Event Page](screenshot/Event-Page.jpg) | ![News Page](screenshot/News-Page.jpg) |
 
-| **Contact Page** | **Mini Game (Quiz)** | **Show All Singers Page** |
-|------------------|----------------------|----------------------------|
-| ![Contact Page](screenshot/Contact Page.jpg) | ![Mini Game](screenshot/Mini game.jpg) | ![Show All Singers](screenshot/Show All Singers.jpg) |
+| Contact Page | Mini Game (Quiz) | Show All Singers Page |
+|--------------|------------------|------------------------|
+| ![Contact Page](screenshot/Contact-Page.jpg) | ![Mini Game](screenshot/Minigame.jpg) | ![Show All Singers](screenshot/Show-All-Singers.jpg) |
+
 
 ---
 
 ### 🛠️ Admin Interface
 
-| **Dashboard Page** | **Add Music Page** | **Add Singer Page** |
-|--------------------|--------------------|----------------------|
-| ![Dashboard](screenshot/Dashboard page.jpg) | ![Add Music](screenshot/Add music page.jpg) | ![Add Singer](screenshot/Add singer page.jpg) |
+| Dashboard Page | Add Music Page | Add Singer Page |
+|----------------|----------------|-----------------|
+| ![Dashboard](screenshot/Dashboard-page.jpg) | ![Add Music](screenshot/Add-music-page.jpg) | ![Add Singer](screenshot/Add-singer-page.jpg) |
 
-| **Manage Singers** | **Manage Songs** | **Manage Users** |
-|--------------------|------------------|------------------|
-| ![Manage Singers](screenshot/Manage Singers.jpg) | ![Manage Songs](screenshot/Manage Song.jpg) | ![Manage Users](screenshot/Manage Users.jpg) |
+| Manage Singers | Manage Songs | Manage Users |
+|----------------|--------------|--------------|
+| ![Manage Singers](screenshot/Manage-Singers.jpg) | ![Manage Songs](screenshot/Manage-Song.jpg) | ![Manage Users](screenshot/Manage-Users.jpg) |
 
-| **Manage Contact** | **Bar Chart (Data Visualization)** | **Top 10 Songs (Admin View)** |
-|--------------------|------------------------------------|-------------------------------|
-| ![Manage Contact](screenshot/Manage Contact.jpg) | ![Bar Chart](screenshot/Bar chart.jpg) | ![Top 10 Admin](screenshot/Top 10 songs Admin.jpg) |
+| Manage Contact | Bar Chart (Data Visualization) | Top 10 Songs (Admin View) |
+|----------------|-------------------------------|----------------------------|
+| ![Manage Contact](screenshot/Manage-Contact.jpg) | ![Bar Chart](screenshot/Bar-chart.jpg) | ![Top 10 Admin](screenshot/Top-10-Songs-Admin.jpg) |
 
-| **Singer Added Confirmation** | **Song Detail After Add Music** | **User Deleted Confirmation** |
-|-------------------------------|----------------------------------|-------------------------------|
-| ![Singer Added](screenshot/Singer added.jpg) | ![Song Added](screenshot/Song detail After add music.jpg) | ![User Deleted](screenshot/Delete User successfully.jpg) |
+| Singer Added Confirmation | Song Detail After Add Music | User Deleted Confirmation |
+|---------------------------|------------------------------|----------------------------|
+| ![Singer Added](screenshot/Singer-added.jpg) | ![Song Added](screenshot/Song-detail-After-add-music.jpg) | ![User Deleted](screenshot/Delete-User-successfully.jpg) |
 
 
 ## 💻 Technology Stack
