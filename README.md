@@ -1,6 +1,6 @@
-# Music Bliss: A Full-Stack Music Streaming Web Application
+# Music : A Full-Stack Music Streaming Web Application
 
-Welcome to Music Bliss, a dynamic web application designed for music enthusiasts and administrators. Users can explore a vast library of songs, discover artists, listen to their favorite tracks, and stay updated with music news and events. Administrators have comprehensive tools to manage content, users, and gain insights through a dedicated dashboard.
+Welcome to Music , a dynamic web application designed for music enthusiasts and administrators. Users can explore a vast library of songs, discover artists, listen to their favorite tracks, and stay updated with music news and events. Administrators have comprehensive tools to manage content, users, and gain insights through a dedicated dashboard.
 
 ## ✨ Features
 
@@ -54,37 +54,48 @@ The application is divided into user-facing features and an administrative backe
 
 The project includes various UI views:
 
-*   **User-Facing (Highlighted Blue in Overview):**
-    *   `Home page`
-    *   `Login`
-    *   `Register`
-    *   `All Music Displayed`
-    *   `All Songs Displayed`
-    *   `Song Details` (e.g., for "Sơn Tùng MTP", "Nal", "Jack 97")
-    *   `Singer Details` (e.g., "Sơn Tùng MTP")
-    *   `Show All Singers`
-    *   `Popular Artists`
-    *   `Top 10 songs` (User view)
-    *   `Search singer Sơn Tùng` (results)
-    *   `Search song Sóng gió` (results)
-    *   `Filter by First Letter S`
-    *   `Event Page`
-    *   `News Page`
-    *   `Contact Page`
-    *   `Mini game (Quiz Challenge)`
-*   **Admin-Facing:**
-    *   `Dashboard page`
-    *   `Bar chart` (likely part of Dashboard)
-    *   `Add music page`
-    *   `Add singer page`
-    *   `Singer added` (confirmation)
-    *   `Song detail After add music`
-    *   `Manage Contact`
-    *   `Manage Singers`
-    *   `Manage Song`
-    *   `Manage Users`
-    *   `Delete User successfully`
-    *   `Top 10 Songs Admin`
+### 👤 User Interface
+
+| **Homepage** | **Login Page** | **Registration Page** |
+|--------------|----------------|------------------------|
+| ![Homepage](screenshot/Home page.jpg) | ![Login Page](screenshot/Login.jpg) | ![Register Page](screenshot/register.jpg) |
+
+| **All Music Displayed** | **Song Details Page** | **Singer Details Page** |
+|-------------------------|------------------------|--------------------------|
+| ![All Music](screenshot/All Music Displayed.jpg) | ![Song Details](screenshot/Song Details.jpg) | ![Singer Details](screenshot/Singer Details Sơn Tùng MTP.jpg) |
+
+| **Popular Artists** | **Top 10 Songs** | **Search Results** |
+|---------------------|------------------|---------------------|
+| ![Popular Artists](screenshot/Popular Artists.jpg) | ![Top 10 Songs](screenshot/Top 10 songs.jpg) | ![Search Singer](screenshot/Search singer Sơn Tùng.jpg) |
+
+| **Filter by First Letter** | **Event Page** | **News Page** |
+|----------------------------|----------------|----------------|
+| ![Filter](screenshot/Filter by First Letter S.jpg) | ![Event Page](screenshot/Event Page.jpg) | ![News Page](screenshot/News Page.jpg) |
+
+| **Contact Page** | **Mini Game (Quiz)** | **Show All Singers Page** |
+|------------------|----------------------|----------------------------|
+| ![Contact Page](screenshot/Contact Page.jpg) | ![Mini Game](screenshot/Mini game.jpg) | ![Show All Singers](screenshot/Show All Singers.jpg) |
+
+---
+
+### 🛠️ Admin Interface
+
+| **Dashboard Page** | **Add Music Page** | **Add Singer Page** |
+|--------------------|--------------------|----------------------|
+| ![Dashboard](screenshot/Dashboard page.jpg) | ![Add Music](screenshot/Add music page.jpg) | ![Add Singer](screenshot/Add singer page.jpg) |
+
+| **Manage Singers** | **Manage Songs** | **Manage Users** |
+|--------------------|------------------|------------------|
+| ![Manage Singers](screenshot/Manage Singers.jpg) | ![Manage Songs](screenshot/Manage Song.jpg) | ![Manage Users](screenshot/Manage Users.jpg) |
+
+| **Manage Contact** | **Bar Chart (Data Visualization)** | **Top 10 Songs (Admin View)** |
+|--------------------|------------------------------------|-------------------------------|
+| ![Manage Contact](screenshot/Manage Contact.jpg) | ![Bar Chart](screenshot/Bar chart.jpg) | ![Top 10 Admin](screenshot/Top 10 songs Admin.jpg) |
+
+| **Singer Added Confirmation** | **Song Detail After Add Music** | **User Deleted Confirmation** |
+|-------------------------------|----------------------------------|-------------------------------|
+| ![Singer Added](screenshot/Singer added.jpg) | ![Song Added](screenshot/Song detail After add music.jpg) | ![User Deleted](screenshot/Delete User successfully.jpg) |
+
 
 ## 💻 Technology Stack
 
@@ -102,13 +113,13 @@ The project includes various UI views:
     *   MySQL Server.
     *   Apache Tomcat (or other Servlet container).
 2.  **Database Setup:**
-    *   Create a MySQL database (e.g., `music_bliss_db`).
-    *   Import the provided SQL schema (`schema.sql` - *you would need to create this*) to set up the necessary tables.
-    *   Configure database connection details (URL, username, password) in the appropriate Java configuration file (e.g., a `DBConnection.java` or properties file).
+    *   Create a MySQL database (e.g., `musicart`).
+    *   Import the provided SQL schema (`musicart.sql` - *you would need to create this*) to set up the necessary tables.
+    *   Configure database connection details (URL, username, password) in the appropriate Java configuration file (e.g., a `connectDB.java` or properties file).
 3.  **Clone the Repository:**
     ```bash
-    git clone [your-repository-url]
-    cd music-bliss-project
+    git clone [https://github.com/TranHuuDat2004/Music_WebJava.git]
+    cd music-project
     ```
 4.  **Build the Project:**
     *   If using Maven:
@@ -119,7 +130,7 @@ The project includes various UI views:
 5.  **Deploy:**
     *   Deploy the generated `.war` file to your Apache Tomcat server (e.g., by copying it to the `webapps` directory).
 6.  **Access the Application:**
-    *   Open your web browser and navigate to `http://localhost:8080/[your-app-context-name]` (the context name is usually the name of the `.war` file without the extension).
+    *   Open your web browser and navigate to `http://localhost:8080/[your-app-context-name]` or `http://localhost:8080/[music-project]` (the context name is usually the name of the `.war` file without the extension).
 
 ## 💡 Usage
 
@@ -128,4 +139,4 @@ The project includes various UI views:
 
 ---
 
-This README provides a comprehensive overview of the Music Bliss application. Enjoy the music!
+This README provides a comprehensive overview of the Music  application. Enjoy the music!
